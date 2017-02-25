@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/retrofit/2.1.0/2de7cd8b95b7021b1d597f049bcb422055119f2c/retrofit-2.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/retrofit-2.1.0_8cfe92dbf0b631e77f681b7ddf95d71e48da384f/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-v4/19.1.0/support-v4-19.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-19.1.0_9ab0f1181e996d42747c96c231bfe70c6192b45b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.3.0/2b802460eea20f8f2ad9c08c74e0f14718e88aa9/okhttp-3.3.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="2b802460eea20f8f2ad9c08c74e0f14718e88aa9">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/okhttp-3.3.0_f3506201fa548f0e1f5a19724cd8a4cae1fe59ed/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="03383aec09dd2951a2c96c3fb67ede236de04297">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3809c386e83a8a7ce7ceee462765897b32dfc31d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.8.0/5ea7af56cc7c567ed9856d99efb30740e9b17ff/okio-1.8.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="05ea7af56cc7c567ed9856d99efb30740e9b17ff">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/okio-1.8.0_62f85c074d0788e3b78694808553b92840d6a0c3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.7/751f548c85fa49f330cecbb1875893f971b33c4e/gson-2.7.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.7_513c0075c525d5d42e3b66a3a391432f483c2d0b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/libs/fastjson-1.2.5.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="9f675e9a1b2bf1224183005752a9214226e8aa8e">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/2/fastjson-1.2.5_04a304022a4c2d8be8241d68db675f9500432bf6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="c3241ba3404a8eb2a4e5f69df827a116da91f6de">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_edf3c78a9ec714ff18b401a29c43a46fce9b7507/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-19.1.0_e0a79106de70b48f615d69deffad58987559beba/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.1.0/aa557d71ead91cbf26e0c316a0f593d168303309/converter-gson-2.1.0.jar"
+        jumboMode="true"
+        revision="24.0.0"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/intermediates/transforms/dex/debug/folders/1000/10/converter-gson-2.1.0_09936bc334bb148714eaeb986e6bb71528d1dbff/classes.dex" />
+    </item>
+
+</items>

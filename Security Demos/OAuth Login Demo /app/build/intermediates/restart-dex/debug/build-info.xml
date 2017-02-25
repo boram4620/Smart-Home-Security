@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="15715077031724"
+    token="8834771458367671541" >
+
+    <task
+        name="javac"
+        duration="161" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="53" />
+    <task
+        name="verifier"
+        duration="13" />
+
+    <artifact
+        location="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/outputs/apk/app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="15715077031724" >
+        <artifact
+            location="/Users/Justin/Documents/GitHub/SecurityProject/Security Demos/OAuth Login Demo /app/build/outputs/apk/app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

@@ -1,0 +1,2077 @@
+
+--app-start--
+processing alfred-workflow.groovy
+currentState, argument not a Constant Expression!
+This App needs further inspection on dynamic method calls.
+currentState, argument not a Constant Expression!
+This App needs further inspection on dynamic method calls.
+req caps: [capability.lock, capability.switch]
+req cap size: 2
+requested commands:[lock, unlock, off, on]
+requested attrs:[lock, switch]
+Dynamic Method Invocation
+This App needs further inspection on dynamic method calls.
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[lock, unlock, off, on]
+attr overpriv:[lock, switch]
+This App has over-privileged requests.
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f]
+[[capability.battery, capability.switch, capability.polling, capability.lock, capability.refresh]]
+This App gets access to switch, lock. This App requests sensitive command: turning on switch, unlocking door; and also requests less sensitive command: turning off switch, locking door. It has no device event subscription. It can lock or unlock user specified door, turn on or turn off user specified switch.
+
+--app-start--
+processing auto-humidity-vent.groovy
+req caps: [capability.relativehumiditymeasurement, capability.switch, capability.energymeter]
+req cap size: 3
+requested commands:[off, on]
+requested attrs:[humidity, switch, energy]
+type 2 command uses
+poll
+called cap-methods by app
+off
+on
+called cap-props by app
+humidity
+attribute uses through subscriptions
+humidity
+cmd overpriv:[]
+attr overpriv:[switch, energy]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, 8a8a038b3f1faad3013f1fad0481000c, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.energymeter, capability.configuration, capability.powermeter, capability.temperaturemeasurement]]
+This App gets access to humidity sensor, fans switch, energy meter. This App uses sensitive information from user input: phone number. This App requests sensitive command: turning on fans switch; and also requests less sensitive command: turning off fans switch. This App has sensitive device subscription: fans switch; and has less sensitive device subscription: humidity sensor, energy meter. It measures moisture level through subscribing to user specified humidity sensor, and then turns on or turns off user specified fans switch, sends notification message to user specified contact number accordingly.
+
+--app-start--
+processing beacon-control.groovy
+req caps: [capability.lock, capability.switch, capability.beacon]
+req cap size: 3
+requested commands:[lock, unlock, off, on]
+requested attrs:[presence, lock, switch]
+called cap-methods by app
+lock
+unlock
+off
+on
+called cap-props by app
+presence
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[lock, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to beacon device, switch, lock. This App uses sensitive information from user input: time. This App requests sensitive command: turning on switch, unlocking door; and also requests less sensitive command: turning off fans switch, locking door. This App has sensitive device subscription: switch, lock; and has less sensitive device subscription: beacon device. It detects beacon presence status through subscribing to user specified beacon device based on user specified time, and then locks or unlocks user specified door, turns on or turns off user specified switch accordingly.
+
+--app-start--
+processing beaconthings-manager.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing big-turn-off.groovy
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+off
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[on]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch. This App has sensitive device subscription: switch. It subscribes to user touch event on App UI. It turns off user specified switch based on user touch control.
+
+--app-start--
+processing big-turn-on.groovy
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[off]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch. This App has sensitive device subscription: switch. It subscribes to user touch event on App UI. It turns on user specified switch based on user touch control.
+
+--app-start--
+processing bon-voyage.groovy
+req caps: [capability.presencesensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[presence]
+called cap-methods by app
+called cap-props by app
+presence
+attribute uses through subscriptions
+presence
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to presence sensor. This App uses sensitive information from user input: mode, phone number. This App has less sensitive device subscription: presence sensor. It detects people presence status through subscribing to user specified presence sensor based on user specified mode, and then sends notification message to user specified contact number accordingly.
+
+--app-start--
+processing bose-soundtouch-connect.groovy
+Reflective call: this.$func(xmlData), count:1
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing bose-soundtouch-control.groovy
+req caps: [capability.motionsensor, capability.musicplayer, capability.contactsensor, capability.switch, capability.button, capability.smokedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor]
+req cap size: 9
+requested commands:[play, playtrack, mute, playtext, nexttrack, restoretrack, off, pause, settrack, resumetrack, previoustrack, setlevel, stop, unmute, on]
+requested attrs:[motion, level, smoke, trackdescription, mute, water, switch, button, acceleration, trackdata, contact, presence, status]
+called cap-methods by app
+play
+off
+pause
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[playtrack, mute, playtext, nexttrack, restoretrack, settrack, resumetrack, previoustrack, setlevel, stop, unmute]
+attr overpriv:[motion, level, smoke, trackdescription, mute, water, switch, button, acceleration, trackdata, contact, presence, status]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 6d38663a-1703-46b6-9939-8c1fb9467cf9, 266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, ff20e87b-992b-42b0-9cd6-72b0030dedc3, 26d69a34-ada2-42dc-9e45-445c78ae2619, 1e88cabe-5ba4-4647-9a23-0ad5b887f94b, f730b653-b0b6-483e-8c84-977e240f5eb3, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.motionsensor, capability.battery, capability.contactsensor, capability.button, capability.carbonmonoxidedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor, capability.refresh, capability.switchlevel, capability.polling, capability.smokedetector]]
+This App gets access to lights switch, dimmers light level controller, motion sensor, light sensor. This App uses sensitive information from user input: mode, time. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch, locking door. It measures the light level through light sensor subscription, detects motion through motion sensor subscription, and then turns on switch, adjusts switch level accordingly.
+
+--app-start--
+processing bright-when-dark-and-or-bright-after-sunset.groovy
+req caps: [capability.motionsensor, capability.switchlevel, capability.illuminancemeasurement, capability.switch]
+req cap size: 4
+requested commands:[setlevel, off, on]
+requested attrs:[motion, illuminance, level, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+motion
+illuminance
+switch
+attribute uses through subscriptions
+illuminance
+motion
+switch
+cmd overpriv:[setlevel]
+attr overpriv:[level]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 5d3d201d-c4b4-4354-81e9-39d6d728e2c0, 2663758a-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e]
+[[capability.switchlevel]]
+This App gets access to lights switch, dimmers light level controller, motion sensor, light sensor. This App uses sensitive information from user input: mode, time. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch, adjusting dimmers light level controller. This App has sensitive device subscription: lights switch; and has less sensitive device subscription: dimmers light level controller, motion sensor. It measures the light level through subscribing to user specified light sensor, detects motion through subscribing to user specified motion sensor, and then turns on user specified lights switch based on user specified mode and time, adjusts user specified dimmers light level controller accordingly.
+
+--app-start--
+processing brighten-dark-places.groovy
+req caps: [capability.contactsensor, capability.illuminancemeasurement, capability.switch]
+req cap size: 3
+requested commands:[off, on]
+requested attrs:[illuminance, contact, switch]
+called cap-methods by app
+on
+called cap-props by app
+illuminance
+contact
+attribute uses through subscriptions
+contact
+cmd overpriv:[off]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to contact sensor, light sensor, switch. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch. This App has sensitive device subscription: switch; and has less sensitive device subscription: contact sensor, light sensor. It detects contact status through subscribing to user specified contact sensor, measures light level through subscribing to user specified light sensor, and then turns on user specified switch accordingly.
+
+--app-start--
+processing brighten-my-path.groovy
+req caps: [capability.motionsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[motion, switch]
+called cap-methods by app
+on
+called cap-props by app
+motion
+attribute uses through subscriptions
+motion
+cmd overpriv:[off]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to motion sensor, switch. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch. This App has sensitive device subscription: switch; and has less sensitive device subscription: motion sensor. It detects motion status through subscribing to user specified motion sensor, and then turns on user specified switch accordingly.
+
+--app-start--
+processing button-controller.groovy
+req caps: [capability.musicplayer, capability.switch, capability.alarm, capability.lock, capability.button]
+req cap size: 5
+requested commands:[play, siren, unlock, playtrack, mute, playtext, nexttrack, restoretrack, pause, off, settrack, resumetrack, both, previoustrack, setlevel, stop, strobe, lock, unmute, on]
+requested attrs:[button, trackdata, level, alarm, trackdescription, lock, mute, status, switch]
+called cap-methods by app
+unlock
+siren
+off
+lock
+on
+called cap-props by app
+button
+trackdata
+level
+alarm
+trackdescription
+lock
+mute
+status
+switch
+attribute uses through subscriptions
+button
+trackdata
+level
+alarm
+trackdescription
+lock
+mute
+status
+switch
+cmd overpriv:[play, playtrack, mute, playtext, nexttrack, restoretrack, pause, settrack, resumetrack, both, previoustrack, setlevel, stop, strobe, unmute]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [6d38663a-1703-46b6-9939-8c1fb9467cf9, 8a9d4b1e3b8af959013b8af9d183000e, c3a56dda-a2c9-40eb-96ad-a1397809b02e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f, ff20e87b-992b-42b0-9cd6-72b0030dedc3]
+[[capability.battery, capability.refresh, capability.polling]]
+
+This App gets access to button, switch, lock, music player, alarm. This App uses sensitive information from user input: mode, time. This App requests sensitive command: turning on switch, unlocking door, sirening alarm, turning on music player; and also requests less sensitive command: turning off switch, locking door, turning off music player. This App has sensitive device subscription: switch, alarm, lock; and has less sensitive device subscription: button. It detects button status through subscribing to user specified button, and then turns on or turns off switch, activates locks or unlocks, sirens alarm, turns on or turns off music player based on user specified time.
+
+--app-start--
+processing camera-power-scheduler.groovy
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. This App uses sensitive information from user input: mode, time. It has no device event subscription. It can turns on or turns off user specified switch based on user specified time.
+
+--app-start--
+processing cameras-on-when-im-away.groovy
+req caps: [capability.switch, capability.presencesensor]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[presence, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+presence
+attribute uses through subscriptions
+presence
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to presence sensor, switch. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch. This App has sensitive device subscription: switch; and has less sensitive device subscription: presence sensor. It detects people presence status through subscribing to user specified presence sensor, and then turns on user specified switch accordingly.
+
+--app-start--
+processing carpool-notifier.groovy
+req caps: [capability.presencesensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[presence]
+called cap-methods by app
+called cap-props by app
+presence
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to presence sensor. This App uses sensitive information from user input: phone number. This App has less sensitive device subscription: presence sensor. It detects people presence status through subscribing to user specified presence sensor, and then sends notification message to user specified contact number accordingly.
+
+--app-start--
+processing close-the-valve.groovy
+req caps: [capability.valve, capability.watersensor]
+req cap size: 2
+requested commands:[close, open]
+requested attrs:[water, contact]
+called cap-methods by app
+close
+called cap-props by app
+water
+attribute uses through subscriptions
+water
+cmd overpriv:[open]
+attr overpriv:[contact]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a1118243f879a60013f8fe4efdb2812, 1e88cabe-5ba4-4647-9a23-0ad5b887f94b]
+[[capability.battery, capability.refresh]]
+This App gets access to water sensor, valve. This App uses sensitive information from user input: phone number. This App requests sensitive command: turning on valve; and also requests less sensitive command: turning off valve. This App has sensitive device subscription: valve; and has less sensitive device subscription: water sensor. It detects water status through subscribing to user specified water sensor, and then turns on or turns off user specified valve, sends notification message to user specified contact number accordingly.
+
+--app-start--
+processing coffee-after-shower.groovy
+req caps: [capability.relativehumiditymeasurement, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[humidity, switch]
+called cap-methods by app
+on
+called cap-props by app
+humidity
+attribute uses through subscriptions
+humidity
+cmd overpriv:[off]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.temperaturemeasurement]]
+This App gets access to humidity sensor, coffee switch. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch. This App has sensitive device subscription: coffee switch; and has less sensitive device subscription: humidity sensor. It measures humidity level through subscribing to user specified humidity sensor, and then turns on or turns off user specified coffee switch accordingly.
+
+--app-start--
+processing color-coordinator.groovy
+req caps: [capability.colorcontrol]
+req cap size: 1
+requested commands:[sethue, setcolor, setsaturation]
+requested attrs:[saturation, color, hue]
+type 2 command uses
+off
+on
+type 2 attr uses
+level
+switch
+called cap-methods by app
+called cap-props by app
+saturation
+hue
+attribute uses through subscriptions
+saturation
+hue
+level
+switch
+colorTemperature
+cmd overpriv:[sethue, setcolor, setsaturation]
+attr overpriv:[color]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [48b39485-7ebc-4c80-bf6e-9a653a2d1c95]
+[[capability.refresh]]
+This App gets access to light color controller. This  requests less sensitive command: adjusting light color, adjusting light color temperature. This App has less sensitive device subscription: light color controller. It detects lights color status through subscribing to user specified light color controller, and then adjusts user specified light color controller accordingly.
+
+--app-start--
+processing curb-control.groovy
+currentState, argument not a Constant Expression!
+--manual investigation required--
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+Dynamic Method Invocation
+--manual investigation required--
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[off, on]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e]
+[[capability.switch]]
+This App gets access to switch. It has no device event subscription. It turns on or turns off switch.
+
+--app-start--
+processing curling-iron.groovy
+req caps: [capability.motionsensor, capability.switch, capability.presencesensor]
+req cap size: 3
+requested commands:[off, on]
+requested attrs:[motion, presence, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+motion
+presence
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to motion sensor, precence sensor, outlets switch. This App uses sensitive information from user input: time. It detects motion status through motion active or motion inactive event subscription, detects precence status people not present event subscription, and then turns on or turns off outlets switch accordingly.
+
+--app-start--
+processing darken-behind-me.groovy
+req caps: [capability.motionsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[motion, switch]
+called cap-methods by app
+off
+called cap-props by app
+motion
+attribute uses through subscriptions
+motion
+cmd overpriv:[on]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to motion sensor, switch. It detects motion status through motion active event subscription, and then turns on switch accordingly.
+
+--app-start--
+processing door-jammed-notification.groovy
+req caps: [capability.doorcontrol]
+req cap size: 1
+requested commands:[close, open]
+requested attrs:[door]
+called cap-methods by app
+called cap-props by app
+door
+attribute uses through subscriptions
+doorState
+cmd overpriv:[close, open]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [548b3451-701a-4244-b66a-40d08564dc47]
+[[capability.contactsensor, capability.refresh]]
+This App gets access to door control. This App uses sensitive information from user input: phone number. It detects door status through door control event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing door-knocker.groovy
+req caps: [capability.contactsensor, capability.accelerationsensor]
+req cap size: 2
+requested commands:[]
+requested attrs:[acceleration, contact]
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[acceleration, contact]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, f730b653-b0b6-483e-8c84-977e240f5eb3]
+[[capability.battery, capability.contactsensor, capability.polling, capability.accelerationsensor, capability.refresh]]
+This App gets access to acceleration sensor, contact sensor. This App uses sensitive information from user input: phone number. It subscribes to acceleration, contact event. It detects acceleration active through acceleration event subscription, detects contact closed status through contact event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing door-lock-code-distress-message.groovy
+req caps: [capability.lock]
+req cap size: 1
+requested commands:[lock, unlock]
+requested attrs:[lock]
+called cap-methods by app
+called cap-props by app
+lock
+attribute uses through subscriptions
+lock
+cmd overpriv:[lock, unlock]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [bdefadfd-d59f-4d54-82c2-5fbb3ac6965f]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to lock. It detects lock status through lock event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing door-state-to-color-light-hue-bulb.groovy
+req caps: [capability.colorcontrol, capability.doorcontrol]
+req cap size: 2
+requested commands:[setsaturation, sethue, setcolor, close, open]
+requested attrs:[saturation, hue, door, color]
+called cap-methods by app
+called cap-props by app
+door
+attribute uses through subscriptions
+doorState
+cmd overpriv:[setsaturation, sethue, setcolor, close, open]
+attr overpriv:[saturation, hue, color]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [48b39485-7ebc-4c80-bf6e-9a653a2d1c95, 548b3451-701a-4244-b66a-40d08564dc47]
+[[capability.switchlevel, capability.colorcontrol, capability.contactsensor, capability.switch, capability.refresh]]
+This App gets access to door control, light color control. It detects door status through door control event subscription, and then changes lights color accordingly.
+
+--app-start--
+processing double-tap.groovy
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+called cap-props by app
+switch
+attribute uses through subscriptions
+switch
+cmd overpriv:[off, on]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. It detects switch status through switch event subscription, and then turns on or turns off switch accordingly.
+
+--app-start--
+processing dry-the-wetspot.groovy
+req caps: [capability.switch, capability.watersensor]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[water, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+water
+attribute uses through subscriptions
+water
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, 1e88cabe-5ba4-4647-9a23-0ad5b887f94b]
+[[capability.battery]]
+This App gets access to water sensor, pump switch. It measures the moisture level through water event subscription, and then turns on or turns off pump switch accordingly.
+
+--app-start--
+processing ecobee-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App gets access to third party devices.
+
+--app-start--
+processing elder-care-daily-routine.groovy
+req caps: [capability.motionsensor, capability.contactsensor]
+req cap size: 2
+requested commands:[]
+requested attrs:[motion, contact]
+called cap-methods by app
+called cap-props by app
+motion
+contact
+attribute uses through subscriptions
+motion
+contact
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to motion sensor, contact sensor. This App uses sensitive information from user input: phone number. It detects motion status through motion active event subscription, detects contact status through contact open event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing elder-care-slip-fall.groovy
+req caps: [capability.motionsensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[motion]
+called cap-methods by app
+called cap-props by app
+motion
+attribute uses through subscriptions
+motion
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to motion sensor. This App uses sensitive information from user input: phone number. It detects motion status through motion active event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing energy-alerts.groovy
+req caps: [capability.powermeter]
+req cap size: 1
+requested commands:[]
+requested attrs:[power]
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[power]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [b100c5ad-6d43-4adf-89f9-4109995e059d]
+[[capability.refresh, capability.powermeter]]
+This App gets access to power meter. This App uses sensitive information from user input: phone number. It measures the power level through power event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing energy-saver.groovy
+req caps: [capability.powermeter, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[switch, power]
+called cap-methods by app
+off
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[on]
+attr overpriv:[switch, power]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, b100c5ad-6d43-4adf-89f9-4109995e059d]
+[[capability.refresh, capability.powermeter]]
+This App gets access to power meter, switch. It measures the power level through power event subscription, and then turns off switch accordingly.
+
+--app-start--
+processing enhanced-auto-lock-door.groovy
+req caps: [capability.contactsensor, capability.lock]
+req cap size: 2
+requested commands:[lock, unlock]
+requested attrs:[lock, contact]
+called cap-methods by app
+lock
+unlock
+called cap-props by app
+lock
+contact
+attribute uses through subscriptions
+lock
+unlock
+contact
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to contact sensor, lock. It detects contact status through contact event subscription, and then locks or unlocks accordingly.
+
+--app-start--
+processing flood-alert.groovy
+req caps: [capability.watersensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[water]
+called cap-methods by app
+called cap-props by app
+water
+attribute uses through subscriptions
+water
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [1e88cabe-5ba4-4647-9a23-0ad5b887f94b]
+[[capability.battery]]
+This App gets access to water sensor. This App uses sensitive information from user input: phone number. It detects water status through water wet event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing forgiving-security.groovy
+req caps: [capability.motionsensor, capability.contactsensor, capability.switch, capability.alarm]
+req cap size: 4
+requested commands:[siren, strobe, off, on, both]
+requested attrs:[alarm, motion, contact, switch]
+called cap-methods by app
+on
+both
+called cap-props by app
+motion
+contact
+attribute uses through subscriptions
+motion
+contact
+cmd overpriv:[siren, strobe, off]
+attr overpriv:[alarm, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to contact sensor, motion sensor, alarm, lights switch. This App uses sensitive information from user input: phone number. It detects motion through motion active subscription, detects contact status through contact open event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing foscam-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing garage-door-monitor.groovy
+req caps: [capability.threeaxis]
+req cap size: 1
+requested commands:[]
+requested attrs:[threeaxis]
+type 2 attr uses
+acceleration
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+acceleration
+cmd overpriv:[]
+attr overpriv:[threeaxis]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [258ee648-d846-4702-bdfb-475a7ed047b4]
+[[capability.battery, capability.contactsensor, capability.threeaxis, capability.signalstrength, capability.temperaturemeasurement]]
+This App gets access to three axis sensor. This App uses sensitive information from user input: phone number. It detects motion status through three axis event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing garage-door-opener.groovy
+subscribeToCommand
+--manual investigation required--
+subscribeToCommand
+--manual investigation required--
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. It detects touch status through touch event subscription, and then turns on or turns off switch accordingly.
+
+--app-start--
+processing gidjit-hub.groovy
+currentValue, argument not a Constant Expression!
+--manual investigation required--
+Reflective call: therm.$command(java.lang.Float.parseFloat(params.p1)), count:1
+Reflective call: therm.$command(params.p1), count:1
+req caps: [capability.thermostat, capability.switch]
+req cap size: 2
+requested commands:[heat, setheatingsetpoint, auto, cool, setthermostatmode, off, setcoolingsetpoint, fanon, emergencyheat, fancirculate, setthermostatfanmode, on, fanauto]
+requested attrs:[coolingsetpoint, thermostatfanmode, thermostatmode, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint, switch]
+Dynamic Method Invocation
+--manual investigation required--
+called cap-methods by app
+off
+on
+called cap-props by app
+switch
+attribute uses through subscriptions
+cmd overpriv:[heat, setheatingsetpoint, auto, cool, setthermostatmode, setcoolingsetpoint, fanon, emergencyheat, fancirculate, setthermostatfanmode, fanauto]
+attr overpriv:[coolingsetpoint, thermostatfanmode, thermostatmode, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, 8aa8a6b23f769c09013f769ed1c20012]
+[[capability.polling]]
+This App gets access to switch, thermostat. It has no device event subscription. It turns on or turns off the switch, adjusts heating set-point or adjusts cooling set-point or adjusts thermostat mode, opens or closes window shade accordingly.
+
+--app-start--
+processing good-night-house.groovy
+req caps: [capability.lock, capability.switch]
+req cap size: 2
+requested commands:[lock, unlock, off, on]
+requested attrs:[lock, switch]
+called cap-methods by app
+lock
+off
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[unlock]
+attr overpriv:[lock, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to switch, lock device. This App uses sensitive information from user input: mode, time. It subscribes to user touch event on App UI. It activates the lock and turns on the switch based on user touch control.
+
+--app-start--
+processing good-night.groovy
+req caps: [capability.motionsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[motion, switch]
+called cap-methods by app
+called cap-props by app
+motion
+switch
+attribute uses through subscriptions
+motion
+switch
+cmd overpriv:[off, on]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to motion sensor, switch. It detects motion status through motion active event subscription, and then turns off switch accordingly.
+
+--app-start--
+processing goodnight-ubi.groovy
+req caps: [capability.contactsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[contact, switch]
+called cap-methods by app
+off
+called cap-props by app
+contact
+switch
+attribute uses through subscriptions
+switch
+cmd overpriv:[on]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch, contact sensor. he following sensitive information from user input are used by the App: time. It subscribes to switch on event, detects the contact status, and use switch on event to turn off the switch.
+
+--app-start--
+processing greetings-earthling.groovy
+req caps: [capability.presencesensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[presence]
+called cap-methods by app
+called cap-props by app
+presence
+attribute uses through subscriptions
+presence
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to precence sensor. This App uses sensitive information from user input: phone number. It detects precence status through precence event subscription, and then sends message to specified contact accordingly.
+
+--app-start--
+processing habit-helper.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing hall-light-welcome-home.groovy
+req caps: [capability.contactsensor, capability.switch, capability.presencesensor]
+req cap size: 3
+requested commands:[off, on]
+requested attrs:[presence, contact, switch]
+called cap-methods by app
+on
+called cap-props by app
+presence
+contact
+attribute uses through subscriptions
+presence
+contact
+cmd overpriv:[off]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to precence sensor, contact sensor, lights switch. It detects precence status through people present subscription, detects contact status through contact open event subscription, and then turns on or turns off lights switch accordingly.
+
+--app-start--
+processing has-barkley-been-fed.groovy
+req caps: [capability.contactsensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[contact]
+called cap-methods by app
+called cap-props by app
+contact
+attribute uses through subscriptions
+contact
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to contact sensor. This App uses sensitive information from user input: phone number. It detects contact status through contact open event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing hub-ip-notifier.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing hue-mood-lighting.groovy
+req caps: [capability.motionsensor, capability.contactsensor, capability.colorcontrol, capability.switch, capability.button, capability.smokedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor]
+req cap size: 9
+requested commands:[setsaturation, sethue, setcolor, off, on]
+requested attrs:[saturation, button, acceleration, motion, color, contact, smoke, hue, presence, water, switch]
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[setsaturation, sethue, setcolor, off, on]
+attr overpriv:[saturation, button, acceleration, motion, color, contact, smoke, hue, presence, water, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 266374ae-3292-11e2-9c79-22000a1dc790, 48b39485-7ebc-4c80-bf6e-9a653a2d1c95, 8a9d4b1e3b8af959013b8af9d183000e, ff20e87b-992b-42b0-9cd6-72b0030dedc3, 26d69a34-ada2-42dc-9e45-445c78ae2619, 1e88cabe-5ba4-4647-9a23-0ad5b887f94b, f730b653-b0b6-483e-8c84-977e240f5eb3, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.motionsensor, capability.battery, capability.contactsensor, capability.colorcontrol, capability.switch, capability.button, capability.carbonmonoxidedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor, capability.refresh, capability.switchlevel, capability.polling, capability.smokedetector]]
+This App gets access to motion sensor, contact sensor, acceleration sensor, switch, precence sensor, smoke sensor, water sensor, button, light color control. It subscribes to contact open, contact closed, acceleration active, motion active, switch on, switch off, people present, presence.not presentsmoke detected, smoke detected, smoke tested, water wet, button pushed event. It detects sensor status, and then controls light color accordingly.
+
+--app-start--
+processing humidity-alert.groovy
+req caps: [capability.relativehumiditymeasurement, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[humidity, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+humidity
+switch
+attribute uses through subscriptions
+humidity
+switch
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.temperaturemeasurement]]
+This App gets access to humidity sensor, switch. This App uses sensitive information from user input: phone number. It measures humidity level through humidity event subscription, and then turns on or turns off switch, sends message to user specified contact accordingly.
+
+--app-start--
+processing it-moved.groovy
+req caps: [capability.accelerationsensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[acceleration]
+called cap-methods by app
+called cap-props by app
+acceleration
+attribute uses through subscriptions
+acceleration
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [f730b653-b0b6-483e-8c84-977e240f5eb3]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to acceleration sensor. This App uses sensitive information from user input: phone number. It detects acceleration status through acceleration active event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing its-too-cold.groovy
+req caps: [capability.temperaturemeasurement, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[temperature, switch]
+called cap-methods by app
+on
+called cap-props by app
+temperature
+switch
+attribute uses through subscriptions
+temperature
+switch
+cmd overpriv:[off]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.relativehumiditymeasurement]]
+This App gets access to temperature sensor, switch. This App uses sensitive information from user input: phone number. It measures temperature level through temperature event subscription, and then turns on switch, sends message to user specified contact accordingly.
+
+--app-start--
+processing its-too-hot.groovy
+req caps: [capability.temperaturemeasurement, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[temperature, switch]
+called cap-methods by app
+on
+called cap-props by app
+temperature
+switch
+attribute uses through subscriptions
+temperature
+switch
+cmd overpriv:[off]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.relativehumiditymeasurement]]
+This App gets access to temperature sensor, switch. This App uses sensitive information from user input: phone number. It measures temperature level through temperature event subscription, and then turns on switch, sends message to user specified contact accordingly.
+
+--app-start--
+processing jawbone-button-notifier.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+--app-start--
+processing jawbone-up-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing jenkins-notifier.groovy
+req caps: [capability.colorcontrol, capability.switch]
+req cap size: 2
+requested commands:[setsaturation, sethue, setcolor, off, on]
+requested attrs:[saturation, hue, color, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[setsaturation, sethue, setcolor]
+attr overpriv:[saturation, hue, color, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [48b39485-7ebc-4c80-bf6e-9a653a2d1c95, 8a9d4b1e3b8af959013b8af9d183000e]
+[[capability.switchlevel, capability.colorcontrol, capability.refresh]]
+This App gets access to switch, color controller. It has no device event subscription. It turns on or turns off the switch, and controls light color accordingly.
+
+--app-start--
+processing keep-me-cozy-ii.groovy
+req caps: [capability.thermostat, capability.temperaturemeasurement]
+req cap size: 2
+requested commands:[heat, setheatingsetpoint, auto, cool, setcoolingsetpoint, fanon, setthermostatmode, emergencyheat, fancirculate, off, setthermostatfanmode, fanauto]
+requested attrs:[coolingsetpoint, thermostatfanmode, thermostatmode, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint]
+type 2 command uses
+poll
+called cap-methods by app
+called cap-props by app
+temperature
+coolingsetpoint
+heatingsetpoint
+thermostatmode
+attribute uses through subscriptions
+temperature
+thermostatMode
+cmd overpriv:[heat, setheatingsetpoint, auto, cool, setcoolingsetpoint, fanon, setthermostatmode, emergencyheat, fancirculate, off, setthermostatfanmode, fanauto]
+attr overpriv:[thermostatfanmode, thermostatoperatingstate, thermostatsetpoint]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8aa8a6b23f769c09013f769ed1c20012, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.relativehumiditymeasurement]]
+This App gets access to thermostat, temperature sensor. It subscribes to user touch event on App UI. It measures temperature level through heating setpoint, cooling setpoint, temperature event subscription, and then sets heating setpoint, sets cooling setpoint.
+
+--app-start--
+processing keep-me-cozy.groovy
+req caps: [capability.thermostat]
+req cap size: 1
+requested commands:[heat, setheatingsetpoint, auto, cool, setcoolingsetpoint, fanon, setthermostatmode, emergencyheat, fancirculate, off, setthermostatfanmode, fanauto]
+requested attrs:[coolingsetpoint, thermostatfanmode, thermostatmode, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint]
+type 2 command uses
+poll
+called cap-methods by app
+called cap-props by app
+temperature
+attribute uses through subscriptions
+heatingSetpoint
+temperature
+coolingSetpoint
+cmd overpriv:[heat, setheatingsetpoint, auto, cool, setcoolingsetpoint, fanon, setthermostatmode, emergencyheat, fancirculate, off, setthermostatfanmode, fanauto]
+attr overpriv:[coolingsetpoint, thermostatfanmode, thermostatmode, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to thermostat. It subscribes to user touch event on App UI. It measures temperature level through heating setpoint, cooling setpoint, temperature event subscription, and then sets heating setpoint, sets cooling setpoint.
+
+--app-start--
+processing laundry-monitor.groovy
+req caps: [capability.switch, capability.accelerationsensor]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[acceleration, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+acceleration
+switch
+attribute uses through subscriptions
+acceleration
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, f730b653-b0b6-483e-8c84-977e240f5eb3]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to acceleration sensor. This App uses sensitive information from user input: phone number. It measures the vibration level through acceleration active, acceleration inactive event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing left-it-open.groovy
+req caps: [capability.contactsensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[contact]
+called cap-methods by app
+called cap-props by app
+contact
+attribute uses through subscriptions
+contact
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to contact sensor. This App uses sensitive information from user input: phone number. It detects contact status through contact open event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing let-there-be-dark.groovy
+req caps: [capability.contactsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[contact, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+contact
+switch
+attribute uses through subscriptions
+switch
+contact
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to contact sensor, switch. It detects contact status through contact, switch on, switch off event subscription, and then turns on or turns off switch accordingly.
+
+--app-start--
+processing let-there-be-light.groovy
+req caps: [capability.contactsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[contact, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+contact
+attribute uses through subscriptions
+contact
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to contact sensor, switch. It detects contact status through contact event subscription, and then turns on or turns off switch accordingly.
+
+--app-start--
+processing life360-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing lifx-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing light-follows-me.groovy
+req caps: [capability.motionsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[motion, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+motion
+attribute uses through subscriptions
+motion
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to motion sensor, switch. It detects motion status through motion active event subscription, and then turns on switch accordingly.
+
+--app-start--
+processing light-up-the-night.groovy
+req caps: [capability.illuminancemeasurement, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[illuminance, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+illuminance
+attribute uses through subscriptions
+illuminance
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to light sensor, lights switch. It detects illuminance status through illuminance event subscription, and then turns on lights switch accordingly.
+
+--app-start--
+processing lights-off-with-no-motion-and-presence.groovy
+req caps: [capability.motionsensor, capability.switch, capability.presencesensor]
+req cap size: 3
+requested commands:[off, on]
+requested attrs:[motion, presence, switch]
+called cap-methods by app
+off
+called cap-props by app
+motion
+presence
+attribute uses through subscriptions
+presence
+motion
+cmd overpriv:[on]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to motion sensor, presence sensor, switch. It detects motion status through motion event subscription, detects precence status through precence event subscription, and then turns on or turns off switch accordingly.
+
+--app-start--
+processing lock-it-when-i-leave.groovy
+req caps: [capability.lock, capability.presencesensor]
+req cap size: 2
+requested commands:[lock, unlock]
+requested attrs:[presence, lock]
+called cap-methods by app
+lock
+unlock
+called cap-props by app
+presence
+lock
+attribute uses through subscriptions
+presence
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [bdefadfd-d59f-4d54-82c2-5fbb3ac6965f, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.battery, capability.polling, capability.refresh]]
+
+--app-start--
+processing logitech-harmony-connect.groovy
+Reflective call: device.$command(*arguments), count:1
+subscribe: is not a Constant Expression!
+--manual investigation required--
+req caps: [capability.motionsensor, capability.contactsensor, capability.illuminancemeasurement, capability.switch, capability.alarm, capability.lock, capability.watersensor, capability.presencesensor, capability.accelerationsensor, capability.relativehumiditymeasurement, capability.temperaturemeasurement]
+req cap size: 11
+requested commands:[siren, unlock, strobe, lock, off, on, both]
+requested attrs:[acceleration, motion, illuminance, contact, alarm, temperature, lock, humidity, presence, water, switch]
+Dynamic Method Invocation
+--manual investigation required--
+Some app-defined methods have the same name as known IoT commands:
+--manual investigation required--
+poll
+addChildDevice usage
+--manual investigation required--
+type 2 attr uses
+status
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[siren, unlock, strobe, lock, off, on, both]
+attr overpriv:[acceleration, motion, illuminance, contact, alarm, temperature, lock, humidity, presence, water, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 266374ae-3292-11e2-9c79-22000a1dc790, 2663758a-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, c3a56dda-a2c9-40eb-96ad-a1397809b02e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f, 1e88cabe-5ba4-4647-9a23-0ad5b887f94b, 017a57fa-5f47-4faf-96b3-183eed48ec9e, f730b653-b0b6-483e-8c84-977e240f5eb3, ba155665-433d-4e20-9d12-efad7744c3d6, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.motionsensor, capability.battery, capability.contactsensor, capability.switch, capability.alarm, capability.watersensor, capability.presencesensor, capability.accelerationsensor, capability.refresh, capability.temperaturemeasurement, capability.illuminancemeasurement, capability.polling, capability.lock, capability.relativehumiditymeasurement]]
+
+--app-start--
+processing monitor-on-sense.groovy
+req caps: [capability.switch, capability.accelerationsensor]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[acceleration, switch]
+called cap-methods by app
+on
+called cap-props by app
+acceleration
+attribute uses through subscriptions
+acceleration
+cmd overpriv:[off]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, f730b653-b0b6-483e-8c84-977e240f5eb3]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to acceleration sensor, switch. It detects acceleration status through acceleration event subscription, and then turns on switch accordingly.
+
+--app-start--
+processing my-light-toggle.groovy
+req caps: [capability.motionsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[motion, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+motion
+switch
+attribute uses through subscriptions
+motion
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to motion sensor, masterToggle switch. It detects motion status through motion event subscription, and then turns on or turns off masterToggle switch accordingly.
+
+--app-start--
+processing netatmo-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing nfc-tag-toggle.groovy
+currentValue, argument not a Constant Expression!
+This App needs further inspection on dynamic method calls.
+currentValue, argument not a Constant Expression!
+This App needs further inspection on dynamic method calls.
+req caps: [capability.touchsensor, capability.switch, capability.lock, capability.doorcontrol]
+req cap size: 4
+requested commands:[lock, unlock, close, off, open, on]
+requested attrs:[lock, touch, door, switch]
+called cap-methods by app
+lock
+unlock
+close
+off
+open
+on
+called cap-props by app
+attribute uses through subscriptions
+nfctouch
+cmd overpriv:[]
+attr overpriv:[lock, touch, door, switch]
+This App has over-privileged requests.
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f, 548b3451-701a-4244-b66a-40d08564dc47]
+[[capability.battery, capability.contactsensor, capability.polling, capability.refresh]]
+This App gets access to touch sensor, switch, lock, door control. This App requests sensitive command: turning on switch, unlocking door, opening garage door; and also requests less sensitive command: turning off switch, locking door, closing garage door. This App has sensitive device subscription: switch, lock, door control; and has less sensitive device subscription: touch sensor. It detects touch status through subscribing to user specified touch sensor, and then turns on or turns off switch, locks or unlocks user specified door, opens or closes user specified garage door accordingly.
+
+--app-start--
+processing nobody-home.groovy
+req caps: [capability.presencesensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[presence]
+called cap-methods by app
+called cap-props by app
+presence
+attribute uses through subscriptions
+presence
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to precence sensor. This App uses sensitive information from user input: phone number. It detects precence status through presence event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing notify-me-when.groovy
+req caps: [capability.motionsensor, capability.contactsensor, capability.switch, capability.button, capability.smokedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor]
+req cap size: 8
+requested commands:[off, on]
+requested attrs:[button, acceleration, motion, contact, smoke, presence, water, switch]
+called cap-methods by app
+called cap-props by app
+button
+acceleration
+motion
+contact
+smoke
+presence
+water
+switch
+attribute uses through subscriptions
+button
+acceleration
+motion
+contact
+smoke
+carbonMonoxide
+presence
+water
+switch
+cmd overpriv:[off, on]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, ff20e87b-992b-42b0-9cd6-72b0030dedc3, 26d69a34-ada2-42dc-9e45-445c78ae2619, 1e88cabe-5ba4-4647-9a23-0ad5b887f94b, f730b653-b0b6-483e-8c84-977e240f5eb3, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.battery, capability.carbonmonoxidedetector, capability.refresh, capability.switchlevel, capability.polling]]
+
+--app-start--
+processing photo-burst-when.groovy
+req caps: [capability.motionsensor, capability.contactsensor, capability.switch, capability.accelerationsensor, capability.presencesensor, capability.imagecapture]
+req cap size: 6
+requested commands:[take, off, on]
+requested attrs:[acceleration, image, motion, presence, contact, switch]
+called cap-methods by app
+take
+called cap-props by app
+acceleration
+motion
+presence
+contact
+switch
+attribute uses through subscriptions
+acceleration
+motion
+presence
+switch
+contact
+cmd overpriv:[off, on]
+attr overpriv:[image]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, f730b653-b0b6-483e-8c84-977e240f5eb3, 017a57fa-5f47-4faf-96b3-183eed48ec9e, 8aa8a6b23f769c09013f769ece9b0010]
+[[capability.battery, capability.polling, capability.refresh]]
+
+--app-start--
+processing plantlink-connector.groovy
+req caps: [capability.sensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[]
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790]
+[[capability.motionsensor]]
+This App gets access to sensor. It subscribes to sensor event. It collects sensor data, and then sends third-party Internect request accordingly.
+--app-start--
+processing ready-for-rain.groovy
+req caps: [capability.contactsensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[contact]
+called cap-methods by app
+called cap-props by app
+contact
+attribute uses through subscriptions
+contact
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to contact sensor. This App uses sensitive information from user input: phone number. It detects contact status through contact open event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing ridiculously-automated-garage-door.groovy
+req caps: [capability.contactsensor, capability.presencesensor, capability.accelerationsensor, capability.momentary]
+req cap size: 4
+requested commands:[push]
+requested attrs:[, acceleration, presence, contact]
+called cap-methods by app
+push
+called cap-props by app
+acceleration
+presence
+contact
+attribute uses through subscriptions
+presence
+acceleration
+contact
+cmd overpriv:[]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, 017a57fa-5f47-4faf-96b3-183eed48ec9e, f730b653-b0b6-483e-8c84-977e240f5eb3, 8a1814663e5dbf7d013e602ecece0248]
+[[capability.battery, capability.switch, capability.polling, capability.refresh]]
+
+--app-start--
+processing safe-watch.groovy
+req caps: [capability.motionsensor, capability.contactsensor, capability.accelerationsensor, capability.presencesensor, capability.threeaxis, capability.temperaturemeasurement]
+req cap size: 6
+requested commands:[]
+requested attrs:[temperature, acceleration, motion, presence, threeaxis, contact]
+called cap-methods by app
+called cap-props by app
+temperature
+acceleration
+motion
+presence
+contact
+attribute uses through subscriptions
+temperature
+acceleration
+motion
+threeAxis
+contact
+cmd overpriv:[]
+attr overpriv:[threeaxis]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 266374ae-3292-11e2-9c79-22000a1dc790, 258ee648-d846-4702-bdfb-475a7ed047b4, 258ee648-d846-4702-bdfb-475a7ed047b4, 017a57fa-5f47-4faf-96b3-183eed48ec9e, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.battery, capability.signalstrength, capability.threeaxis, capability.relativehumiditymeasurement]]
+This App gets access to contact sensor, motion sensor, acceleration sensor, three axis sensor, temperature sensor, presence sensor. This App uses sensitive information from user input: phone number. It detects contact status through contact open event subscription, detects motion status through motion active event subscription, detects acceleration status through acceleration active event subscription, detects motion status through three axis event subscription, measures temperature level through temperature event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing shabbat-and-holiday-modes.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing simple-control.groovy
+Reflective call: device.$command(*arguments), count:1
+Reflective call: device.$command(*arguments), count:1
+subscribe: is not a Constant Expression!
+--manual investigation required--
+req caps: [capability.musicplayer, capability.colorcontrol, capability.switchlevel, capability.switch, capability.lock, capability.thermostat, capability.doorcontrol]
+req cap size: 7
+requested commands:[play, heat, auto, nexttrack, restoretrack, resumetrack, sethue, setcolor, setcoolingsetpoint, lock, unmute, emergencyheat, fancirculate, close, on, setheatingsetpoint, setsaturation, unlock, cool, playtrack, mute, setthermostatmode, playtext, pause, off, settrack, previoustrack, setlevel, stop, fanon, setthermostatfanmode, open, fanauto]
+requested attrs:[door, thermostatfanmode, color, level, trackdescription, thermostatoperatingstate, mute, thermostatsetpoint, switch, saturation, coolingsetpoint, trackdata, thermostatmode, temperature, hue, lock, heatingsetpoint, status]
+Dynamic Method Invocation
+--manual investigation required--
+addChildDevice usage
+--manual investigation required--
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[play, heat, auto, nexttrack, restoretrack, resumetrack, sethue, setcolor, setcoolingsetpoint, lock, unmute, emergencyheat, fancirculate, close, on, setheatingsetpoint, setsaturation, unlock, cool, playtrack, mute, setthermostatmode, playtext, pause, off, settrack, previoustrack, setlevel, stop, fanon, setthermostatfanmode, open, fanauto]
+attr overpriv:[door, thermostatfanmode, color, level, trackdescription, thermostatoperatingstate, mute, thermostatsetpoint, switch, saturation, coolingsetpoint, trackdata, thermostatmode, temperature, hue, lock, heatingsetpoint, status]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [6d38663a-1703-46b6-9939-8c1fb9467cf9, 48b39485-7ebc-4c80-bf6e-9a653a2d1c95, 5d3d201d-c4b4-4354-81e9-39d6d728e2c0, 8a9d4b1e3b8af959013b8af9d183000e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f, 8aa8a6b23f769c09013f769ed1c20012, 548b3451-701a-4244-b66a-40d08564dc47]
+[[capability.battery, capability.colorcontrol, capability.contactsensor, capability.switch, capability.refresh, capability.thermostat, capability.garagedoorcontrol, capability.musicplayer, capability.switchlevel, capability.polling, capability.lock, capability.doorcontrol]]
+This App gets access to switch, lock, thermostat, door control, color control, music player, switch level. It subscribes to switch, lock, thermostat, door control, color control, music player, switch level events. It does not use device commands.
+
+--app-start--
+processing simple-sync-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing simple-sync-trigger.groovy
+req caps: [capability.motionsensor, capability.contactsensor, capability.switch, capability.button, capability.mediacontroller, capability.accelerationsensor, capability.presencesensor]
+req cap size: 7
+requested commands:[getcurrentactivity, startactivity, off, getallactivities, on]
+requested attrs:[button, acceleration, motion, activities, contact, currentactivity, presence, switch]
+Some app-defined methods have the same name as known IoT commands:
+--manual investigation required--
+startactivity
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[getcurrentactivity, startactivity, off, getallactivities, on]
+attr overpriv:[button, acceleration, motion, activities, contact, currentactivity, presence, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, ff20e87b-992b-42b0-9cd6-72b0030dedc3, a33780a2-68c1-465b-9c81-ca8081701b40, f730b653-b0b6-483e-8c84-977e240f5eb3, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.motionsensor, capability.battery, capability.contactsensor, capability.switch, capability.button, capability.mediacontroller, capability.accelerationsensor, capability.presencesensor, capability.refresh, capability.switchlevel, capability.polling]]
+This App gets access to media controller, motion sensor, contact sensor, acceleration sensor, switch, precence sensor, button. It subscribes to contact open, contact closed, acceleration active, motion active, motion inactive, switch on, switch off, people present, people not present, button pushed event. It does not use device commands.
+
+--app-start--
+processing smart-auto-lock-unlock.groovy
+req caps: [capability.contactsensor, capability.lock]
+req cap size: 2
+requested commands:[lock, unlock]
+requested attrs:[lock, contact]
+called cap-methods by app
+lock
+unlock
+called cap-props by app
+lock
+contact
+attribute uses through subscriptions
+lock
+unlock
+contact
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to contact sensor, lock. This App uses sensitive information from user input: time, phone number. This App requests sensitive command: unlocking door; and also requests less sensitive command: locking door. This App has sensitive device subscription: lock; and has less sensitive device subscription: contact sensor. It detects contact status through subscribing to user specified contact sensor, and then locks or unlocks user specified door lock based on user specified time, sends notification message to user specified contact number accordingly.
+
+--app-start--
+processing smart-energy-service.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+
+--app-start--
+processing smart-home-ventilation.groovy
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. It has no device event subscription. It turns on or turns off switch.
+
+--app-start--
+processing smart-humidifier.groovy
+req caps: [capability.relativehumiditymeasurement, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[humidity, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+humidity
+switch
+attribute uses through subscriptions
+humidity
+switch
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.temperaturemeasurement]]
+This App gets access to humidity sensor, switch. This App uses sensitive information from user input: phone number. It measures moisture level through humidity event subscription, and then turns on or turns off switch, sends message to user specified contact accordingly.
+
+--app-start--
+processing smart-light-timer-x-minutes-unless-already-on.groovy
+req caps: [capability.motionsensor, capability.contactsensor, capability.switch]
+req cap size: 3
+requested commands:[off, on]
+requested attrs:[motion, contact, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+motion
+contact
+switch
+attribute uses through subscriptions
+motion
+switch
+contact
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to motion sensor, contact sensor, switch. It detects contact status through motion event subscription, detects motion status through contact event event subscription, and then turns on or turns off switch accordingly.
+
+--app-start--
+processing smart-turn-it-on.groovy
+req caps: [capability.switch, capability.presencesensor]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[presence, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[presence, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.presencesensor]]
+This App gets access to precence sensor, switch. It detects precence status through precence event subscription, and then turns on or turns off switch, sends message to user specified contact accordingly.
+
+--app-start--
+processing smart-windows.groovy
+req caps: [capability.contactsensor, capability.temperaturemeasurement]
+req cap size: 2
+requested commands:[]
+requested attrs:[temperature, contact]
+called cap-methods by app
+called cap-props by app
+temperature
+contact
+attribute uses through subscriptions
+temperature
+contact
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.relativehumiditymeasurement]]
+This App gets access to contact sensor, temperature sensor. This App uses sensitive information from user input: phone number. It detects contact status through contact event subscription, measures temperature level through temperature event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing sonos-music-modes.groovy
+req caps: [capability.musicplayer]
+req cap size: 1
+requested commands:[play, playtrack, mute, playtext, nexttrack, restoretrack, pause, settrack, resumetrack, previoustrack, setlevel, stop, unmute]
+requested attrs:[trackdescription, trackdata, mute, level, status]
+called cap-methods by app
+playtrack
+setlevel
+stop
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[play, mute, playtext, nexttrack, restoretrack, pause, settrack, resumetrack, previoustrack, unmute]
+attr overpriv:[trackdescription, trackdata, mute, level, status]
+This App has over-privileged requests.
+type2 overprivilege unused caps:
+type2 driver combination: [6d38663a-1703-46b6-9939-8c1fb9467cf9]
+[[capability.refresh, capability.switch]]
+This App gets access to music player. This App uses sensitive information from user input: mode. This App requests sensitive command: playing music, playing music text, playing next track, restoring track, setting track, resuming track, playing previous track, unmuting music; and also requests less sensitive command: muting music, pausing music. This App has sensitive device subscription: music player. It plays music, mutes music, plays music text, plays next track, restores track, sets track, resumes track, plays previous track, unmutes music based on user specified mode.
+
+--app-start--
+processing sonos-remote-control.groovy
+req caps: [capability.musicplayer, capability.button]
+req cap size: 2
+requested commands:[play, playtrack, mute, playtext, nexttrack, restoretrack, pause, settrack, resumetrack, previoustrack, setlevel, stop, unmute]
+requested attrs:[button, trackdescription, trackdata, mute, level, status]
+called cap-methods by app
+play
+previoustrack
+setlevel
+nexttrack
+pause
+called cap-props by app
+button
+trackdescription
+trackdata
+mute
+level
+status
+attribute uses through subscriptions
+button
+trackdescription
+trackdata
+mute
+level
+status
+cmd overpriv:[playtrack, mute, playtext, restoretrack, settrack, resumetrack, stop, unmute]
+attr overpriv:[]
+This App has over-privileged requests.
+type2 overprivilege unused caps:
+type2 driver combination: [6d38663a-1703-46b6-9939-8c1fb9467cf9, ff20e87b-992b-42b0-9cd6-72b0030dedc3]
+[[capability.switch, capability.refresh]]
+This App gets access to button, music player. This App uses sensitive information from user input: mode. This App requests sensitive command: playing music, playing music text, playing next track, restoring track, setting track, resuming track, playing previous track, unmuting music; and also requests less sensitive command: muting music, pausing music. This App has sensitive device subscription: music player; and has less-sensitive device subscription: button. It detects button status through subscribing to user specified button, and then plays music, mutes music, plays music text, plays next track, restores track, sets track, resumes track, plays previous track, unmutes music accordingly.
+
+--app-start--
+processing speaker-control.groovy
+req caps: [capability.motionsensor, capability.musicplayer, capability.contactsensor, capability.switch, capability.button, capability.smokedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor]
+req cap size: 9
+requested commands:[play, playtrack, mute, playtext, nexttrack, restoretrack, off, pause, settrack, resumetrack, previoustrack, setlevel, stop, unmute, on]
+requested attrs:[motion, level, smoke, trackdescription, mute, water, switch, button, acceleration, trackdata, contact, presence, status]
+called cap-methods by app
+play
+nexttrack
+off
+pause
+previoustrack
+setlevel
+on
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[playtrack, mute, playtext, restoretrack, settrack, resumetrack, stop, unmute]
+attr overpriv:[motion, level, smoke, trackdescription, mute, water, switch, button, acceleration, trackdata, contact, presence, status]
+This App has over-privileged requests.
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 6d38663a-1703-46b6-9939-8c1fb9467cf9, 266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, ff20e87b-992b-42b0-9cd6-72b0030dedc3, 26d69a34-ada2-42dc-9e45-445c78ae2619, 1e88cabe-5ba4-4647-9a23-0ad5b887f94b, f730b653-b0b6-483e-8c84-977e240f5eb3, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.motionsensor, capability.battery, capability.contactsensor, capability.button, capability.carbonmonoxidedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor, capability.refresh, capability.polling, capability.smokedetector]]
+This App gets access to motion sensor, contact sensor, switch, button, smoke detector, water sensor, acceleration sensor, presence sensor, music player. This App requests sensitive command: turning on switch, playing music, playing music text, playing next track, restoring track, setting track, resuming track, playing previous track, unmuting music; and also requests less sensitive command: turning off switch, muting music, pausing music. This App has sensitive device subscription: switch, music player; and has less-sensitive device subscription: motion sensor, contact sensor, smoke detector, water sensor, acceleration sensor, presence sensor, button. It detects contact status through subscribing to user specified contact sensor, detects motion status through subscribing to user specified motion sensor, detects button status through subscribing to user specified button, detects smoke status through subscribing to user specified smoke sensor, detects water status through subscribing to user specified water sensor, detects vibration through subscribing to user specified acceleration sensor, detects people presence status through subscribing to user specified presence sensor, detects button status through subscribing to user specified button, and then turns on or turns off user specified switch, plays music, mutes music, plays music text, plays next track, restores track, sets track, resumes track, plays previous track, unmutes music on user specified music player accordingly.
+
+--app-start--
+processing speaker-mood-music.groovy
+req caps: [capability.motionsensor, capability.musicplayer, capability.contactsensor, capability.switch, capability.button, capability.smokedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor]
+req cap size: 9
+requested commands:[play, playtrack, mute, playtext, nexttrack, restoretrack, off, pause, settrack, resumetrack, previoustrack, setlevel, stop, unmute, on]
+requested attrs:[motion, level, smoke, trackdescription, mute, water, switch, button, acceleration, trackdata, contact, presence, status]
+called cap-methods by app
+playtrack
+setlevel
+stop
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[play, mute, playtext, nexttrack, restoretrack, off, pause, settrack, resumetrack, previoustrack, unmute, on]
+attr overpriv:[motion, level, smoke, trackdescription, mute, water, switch, button, acceleration, trackdata, contact, presence, status]
+This App has over-privileged requests.
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 6d38663a-1703-46b6-9939-8c1fb9467cf9, 266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, ff20e87b-992b-42b0-9cd6-72b0030dedc3, 26d69a34-ada2-42dc-9e45-445c78ae2619, 1e88cabe-5ba4-4647-9a23-0ad5b887f94b, f730b653-b0b6-483e-8c84-977e240f5eb3, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.motionsensor, capability.battery, capability.contactsensor, capability.switch, capability.button, capability.carbonmonoxidedetector, capability.watersensor, capability.accelerationsensor, capability.presencesensor, capability.refresh, capability.polling, capability.smokedetector]]
+This App gets access to motion sensor, contact sensor, switch, button, smoke detector, water sensor, acceleration sensor, presence sensor, music player. This App requests sensitive command: turning on switch, playing music, playing music text, playing next track, restoring track, setting track, resuming track, playing previous track, unmuting music; and also requests less sensitive command: turning off switch, muting music, pausing music. This App has sensitive device subscription: switch, music player; and has less-sensitive device subscription: motion sensor, contact sensor, smoke detector, water sensor, acceleration sensor, presence sensor, button. It detects contact status through subscribing to user specified contact sensor, detects motion status through subscribing to user specified motion sensor, detects button status through subscribing to user specified button, detects smoke status through subscribing to user specified smoke sensor, detects water status through subscribing to user specified water sensor, detects vibration through subscribing to user specified acceleration sensor, detects people presence status through subscribing to user specified presence sensor, detects button status through subscribing to user specified button, and then turns on or turns off user specified switch, plays music, mutes music, plays music text, plays next track, restores track, sets track, resumes track, plays previous track, unmutes music on user specified music player accordingly.
+
+--app-start--
+processing spruce-scheduler.groovy
+req caps: [capability.relativehumiditymeasurement, capability.contactsensor, capability.switch]
+req cap size: 3
+requested commands:[off, on]
+requested attrs:[humidity, contact, switch]
+type 2 attr uses
+status
+called cap-methods by app
+off
+on
+called cap-props by app
+switch
+attribute uses through subscriptions
+switch
+status
+cmd overpriv:[]
+attr overpriv:[humidity, contact]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.contactsensor, capability.relativehumiditymeasurement, capability.temperaturemeasurement]]
+This App gets access to sync switch, contact sensor, humidity sensor. It detects contact status through contact event subscription, measures moisture levels through humidity event subscription, and then turns on or turns off switch accordingly.
+
+--app-start--
+processing switch-activates-home-phrase-or-mode.groovy
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+called cap-props by app
+switch
+attribute uses through subscriptions
+switch
+cmd overpriv:[off, on]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. It subscribes to switch event. It does not use device commands.
+
+--app-start--
+processing switch-activates-home-phrase.groovy
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+called cap-props by app
+switch
+attribute uses through subscriptions
+switch
+cmd overpriv:[off, on]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. It subscribes to switch event. It does not use device commands.
+
+--app-start--
+processing switch-changes-mode.groovy
+req caps: [capability.switch]
+req cap size: 1
+requested commands:[off, on]
+requested attrs:[switch]
+called cap-methods by app
+called cap-props by app
+switch
+attribute uses through subscriptions
+switch
+cmd overpriv:[off, on]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to switch. It subscribes to switch event. It does not use device commands.
+
+--app-start--
+processing talking-alarm-clock.groovy
+req caps: [capability.musicplayer, capability.switchlevel, capability.switch, capability.relativehumiditymeasurement, capability.thermostat, capability.temperaturemeasurement]
+req cap size: 6
+requested commands:[play, heat, auto, nexttrack, restoretrack, resumetrack, setcoolingsetpoint, unmute, emergencyheat, fancirculate, on, setheatingsetpoint, cool, playtrack, mute, setthermostatmode, playtext, pause, off, settrack, previoustrack, setlevel, stop, fanon, setthermostatfanmode, fanauto]
+requested attrs:[thermostatfanmode, level, trackdescription, thermostatoperatingstate, mute, thermostatsetpoint, switch, coolingsetpoint, trackdata, thermostatmode, temperature, humidity, heatingsetpoint, status]
+called cap-methods by app
+on
+called cap-props by app
+thermostatmode
+temperature
+attribute uses through subscriptions
+cmd overpriv:[play, heat, auto, nexttrack, restoretrack, resumetrack, setcoolingsetpoint, unmute, emergencyheat, fancirculate, setheatingsetpoint, cool, playtrack, mute, setthermostatmode, playtext, pause, off, settrack, previoustrack, setlevel, stop, fanon, setthermostatfanmode, fanauto]
+attr overpriv:[thermostatfanmode, level, trackdescription, thermostatoperatingstate, mute, thermostatsetpoint, switch, coolingsetpoint, trackdata, humidity, heatingsetpoint, status]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [6d38663a-1703-46b6-9939-8c1fb9467cf9, 5d3d201d-c4b4-4354-81e9-39d6d728e2c0, 8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6, 0e7aa867-9aec-4a24-a372-69014bfa8c24, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.musicplayer, capability.switchlevel, capability.relativehumiditymeasurement, capability.refresh]]
+This App gets access to music player, switch, switch level, thermostat, temperature sensor, humidity sensor. It subscribes to user touch event on App UI. It detects touch status, and then turns on or turns off switch, sets switch level, sets cooling set-point or sets heating set-point on thermostat, plays track or plays sound and track on music player based on user touch control.
+
+--app-start--
+processing tesla-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+
+--app-start--
+processing thermostat-auto-off.groovy
+req caps: [capability.contactsensor, capability.thermostat]
+req cap size: 2
+requested commands:[heat, setheatingsetpoint, auto, cool, setcoolingsetpoint, fanon, setthermostatmode, emergencyheat, fancirculate, off, setthermostatfanmode, fanauto]
+requested attrs:[coolingsetpoint, thermostatfanmode, thermostatmode, contact, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint]
+called cap-methods by app
+off
+called cap-props by app
+contact
+attribute uses through subscriptions
+contact
+cmd overpriv:[heat, setheatingsetpoint, auto, cool, setcoolingsetpoint, fanon, setthermostatmode, emergencyheat, fancirculate, setthermostatfanmode, fanauto]
+attr overpriv:[coolingsetpoint, thermostatfanmode, thermostatmode, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, 8aa8a6b23f769c09013f769ed1c20012]
+[[capability.polling]]
+This App gets access to thermostat, contact sensor. It detects contact status through contact open event subscription, and then adjusts thermostat mode accordingly.
+
+--app-start--
+processing thermostat-window-check.groovy
+req caps: [capability.contactsensor, capability.thermostat]
+req cap size: 2
+requested commands:[heat, setheatingsetpoint, auto, cool, setcoolingsetpoint, fanon, setthermostatmode, emergencyheat, fancirculate, off, setthermostatfanmode, fanauto]
+requested attrs:[coolingsetpoint, thermostatfanmode, thermostatmode, contact, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint]
+called cap-methods by app
+off
+called cap-props by app
+contact
+attribute uses through subscriptions
+thermostatMode
+contact
+cmd overpriv:[heat, setheatingsetpoint, auto, cool, setcoolingsetpoint, fanon, setthermostatmode, emergencyheat, fancirculate, setthermostatfanmode, fanauto]
+attr overpriv:[coolingsetpoint, thermostatfanmode, thermostatmode, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, 8aa8a6b23f769c09013f769ed1c20012]
+[[capability.polling]]
+This App gets access to contact sensor, thermostat. This App uses sensitive information from user input: phone number. It detects contact status through contact event subscription, detects thermostat mode through thermostat mode event subscription, and then sends message to user specified contact accordingly.
+
+--app-start--
+processing turn-off-with-motion.groovy
+req caps: [capability.motionsensor, capability.switch]
+req cap size: 2
+requested commands:[off, on]
+requested attrs:[motion, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+motion
+attribute uses through subscriptions
+motion
+cmd overpriv:[]
+attr overpriv:[switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+This App gets access to motion sensor, switch. It detects motion status through motion event subscription, and then turns on or turns off switch accordingly.
+
+--app-start--
+processing ubi.groovy
+currentState, argument not a Constant Expression!
+--manual investigation required--
+subscribe: is not a Constant Expression!
+--manual investigation required--
+req caps: [capability.motionsensor, capability.contactsensor, capability.switch, capability.presencesensor, capability.lock]
+req cap size: 5
+requested commands:[lock, unlock, off, on]
+requested attrs:[lock, motion, presence, contact, switch]
+Dynamic Method Invocation
+--manual investigation required--
+called cap-methods by app
+called cap-props by app
+lock
+motion
+presence
+contact
+switch
+attribute uses through subscriptions
+lock
+motion
+presence
+contact
+switch
+cmd overpriv:[lock, unlock, off, on]
+attr overpriv:[]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f, 017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.battery, capability.polling, capability.refresh]]
+This App gets access to switch, contact sensor. It detects the contact status through switch on event subscription, and then turns on or turns off the switch accordingly.
+
+--app-start--
+processing vinli-home-connect.groovy
+req caps: [capability.lock, capability.switch]
+req cap size: 2
+requested commands:[lock, unlock, off, on]
+requested attrs:[lock, switch]
+Dynamic Method Invocation
+--manual investigation required--
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[lock, unlock, off, on]
+attr overpriv:[lock, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [8a9d4b1e3b8af959013b8af9d183000e, bdefadfd-d59f-4d54-82c2-5fbb3ac6965f]
+[[capability.battery, capability.switch, capability.polling, capability.lock, capability.refresh]]
+This App gets access to switch, lock. This App requests sensitive command: turning on switch, unlocking door; and also requests less sensitive command: turning off switch, locking door. It has no device event subscription. It can turn on or turn off user specified switch, locks or unlocks user specified lock.
+
+--app-start--
+processing virtual-thermostat.groovy
+req caps: [capability.motionsensor, capability.temperaturemeasurement, capability.switch]
+req cap size: 3
+requested commands:[off, on]
+requested attrs:[motion, temperature, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+motion
+temperature
+switch
+attribute uses through subscriptions
+temperature
+motion
+switch
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [26637648-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.relativehumiditymeasurement]]
+This App gets access to temperature sensor, motion sensor, switch. This App requests sensitive command: turning on switch; and also requests less sensitive command: turning off switch. This App has sensitive device subscription: switch; and has less sensitive device subscription: temperature sensor, motion sensor. It measures temperature level through subscribing to user specified temperature sensor, detects motion status through subscribing to user specified motion sensor, and then turns on or turns off user specified switch accordingly.
+
+--app-start--
+processing wattvision-manager.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing weather-underground-pws-connect.groovy
+req caps: [capability.relativehumiditymeasurement, capability.temperaturemeasurement]
+req cap size: 2
+requested commands:[]
+requested attrs:[temperature, humidity]
+called cap-methods by app
+called cap-props by app
+temperature
+humidity
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[]
+This App gets access to temperature sensor, humidity sensor. This App uses sensitive information from user input: zip code. This App has less sensitive device subscription: temperature sensor, humidity sensor. It measures temperature level through subscribing to user specified temperature sensor based on user specified zip code, measures moisture level through subscribing to user specified humidity sensor, and then sends Internet request to third-party server accordingly.
+
+--app-start--
+processing weather-windows.groovy
+req caps: [capability.contactsensor, capability.temperaturemeasurement]
+req cap size: 2
+requested commands:[]
+requested attrs:[temperature, contact]
+called cap-methods by app
+called cap-props by app
+temperature
+contact
+attribute uses through subscriptions
+temperature
+contact
+cmd overpriv:[]
+attr overpriv:[]
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, ba155665-433d-4e20-9d12-efad7744c3d6]
+[[capability.relativehumiditymeasurement]]
+This App gets access to contact sensor, temperature sensor. This App uses sensitive information from user input: zip code, phone number. This App has less sensitive device subscription: contact sensor, temperature sensor. It measures temperature level through subscribing to user specified temperature sensor based on user specified zip code, detects contact status through subscribing to user specified contact sensor, and then sends notification message to user specified contact number accordingly.
+
+--app-start--
+processing wemo-connect.groovy
+req caps: []
+req cap size: 0
+requested commands:[]
+requested attrs:[]
+This App has no access to device capabilities. It has no device event subscription. It does not use device commands.
+
+--app-start--
+processing whole-house-fan.groovy
+req caps: [capability.contactsensor, capability.switch, capability.temperaturemeasurement, capability.thermostat]
+req cap size: 4
+requested commands:[heat, setheatingsetpoint, auto, cool, setthermostatmode, off, setcoolingsetpoint, fanon, emergencyheat, fancirculate, setthermostatfanmode, on, fanauto]
+requested attrs:[coolingsetpoint, thermostatfanmode, thermostatmode, contact, temperature, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint, switch]
+called cap-methods by app
+off
+on
+called cap-props by app
+temperature
+contact
+attribute uses through subscriptions
+temperature
+thermostatMode
+contact
+cmd overpriv:[heat, setheatingsetpoint, auto, cool, setthermostatmode, setcoolingsetpoint, fanon, emergencyheat, fancirculate, setthermostatfanmode, fanauto]
+attr overpriv:[coolingsetpoint, thermostatfanmode, thermostatmode, heatingsetpoint, thermostatoperatingstate, thermostatsetpoint, switch]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [266374ae-3292-11e2-9c79-22000a1dc790, 8a9d4b1e3b8af959013b8af9d183000e, ba155665-433d-4e20-9d12-efad7744c3d6, 0e7aa867-9aec-4a24-a372-69014bfa8c24]
+[[capability.relativehumiditymeasurement]]
+This App gets access to temperature sensor, switch, thermostat, contact sensor. It measures temperature level through subscribing to user specified temperature sensor, detects thermostat mode through subscribing to user specified thermostat, detects contact status through subscribing to user specified contact sensor, and then adjusts thermostat mode on user specified thermostat accordingly.
+
+--app-start--
+processing working-from-home.groovy
+req caps: [capability.presencesensor]
+req cap size: 1
+requested commands:[]
+requested attrs:[presence]
+called cap-methods by app
+called cap-props by app
+attribute uses through subscriptions
+cmd overpriv:[]
+attr overpriv:[presence]
+^^^^^^^^-OVERPRIVILEGED-^^^^^^^
+type2 overprivilege unused caps:
+type2 driver combination: [017a57fa-5f47-4faf-96b3-183eed48ec9e]
+[[capability.presencesensor]]
+This App gets access to presence sensor. This App uses sensitive information from user input: mode, phone number. This App has less sensitive device subscription: presence sensor. It detects people presence status through subscribing to user specified presence sensor based on user specified mode, and then sends notification message to user specified contact number accordingly.

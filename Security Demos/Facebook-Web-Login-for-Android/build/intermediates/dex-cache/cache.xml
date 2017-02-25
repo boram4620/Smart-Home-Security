@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="4477ea44f5ec5ad064022a22691732d7638ff197">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-8.1.0_b5d635227c85949f13a583ea001fc2d048602c3e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="f3f9405f68a025a627983e0f33f71eda901d774d">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_b41e32c7f12e8523249a40100c58dab3c21a1703/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="bc599eb9531da9d18bc58ec4eb0b1a1d895f6839">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.2.0_3100f67e65f6d31499f8304437eac2a43e8f2871/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_8b553d92464f95cdea42155011c5414fba91ea9b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_a98900ca91b6f0216dd00cca767e7841b2473704/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.14.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="7cb8f70e66bdc25ee66ab8351a4e7214b6517aa8">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.14.0_02b30ecfb3c8e5fbd647d6271823c2a005a7a006/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_c888d3e9bc9f66f892c5053072c5c3b37bd8c67b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_6e7fbeaad0849b2f02887578138ba20d2c65a506/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/8.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="d0dda274b703dd9c5bb056867649d22b4171ae7d">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-8.1.0_2b4fc22ef06a7f237dbc2db9ad675100b9d5ac78/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_ce6374bea257e753fb80349760c850f03026eb4b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-23.4.0_1f17dbeec4a6b8329482c09344a2d1fbbc216015/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-21.0.3_53cb5b4fbba996d7c48059acef32c698efbac0ab/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="46b7c31422ed42244477056a2adc7fb57ee049ac">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/Facebook-Web-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f307c91659e09a21b8f30adb5803f7eb887e5f85/classes.dex" />
+    </item>
+
+</items>

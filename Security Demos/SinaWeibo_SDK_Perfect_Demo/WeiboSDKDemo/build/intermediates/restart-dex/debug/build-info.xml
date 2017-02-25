@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="x86_64,x86"
+    api-level="23"
+    density="xxhdpi"
+    format="7"
+    timestamp="8673356829191"
+    token="-1690543114151066389" >
+
+    <task
+        name="javac"
+        duration="884" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="756" />
+    <task
+        name="verifier"
+        duration="296" />
+
+    <artifact
+        location="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/outputs/apk/WeiboSDKDemo-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="8673356829191" >
+        <artifact
+            location="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/outputs/apk/WeiboSDKDemo-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

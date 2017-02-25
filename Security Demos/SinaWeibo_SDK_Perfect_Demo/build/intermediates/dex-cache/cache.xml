@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Justin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.1.1_75f68462f49f35357343d76be430f56663372529/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="66a50bda97cb2b131a2ac205ce0b8bc358755813">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_41a427faea351cbf39b12391cd292a6d50326369/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.1.1_7b2861c4a0b64e7b4ff4c2aefed6335ebea9eb9a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/exploded-aar/SinaWeibo_SDK_Perfect_Demo/WeiboSDK/unspecified/jars/libs/weiboSDKCore_3.1.2.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="e9b8fc067f3622451c7790d5a79bb9cc685d9dd3">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/transforms/dex/debug/folders/1000/8/weiboSDKCore_3.1.2_e2bf505b36004ad066168c634411b2216841d44c/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/libs/internal_impl-23.1.1.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="a4de9c81ae239414e1ed0f86441b02abaf29bca9">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.1.1_72795544db4115ac4d31f4707c56d7e2b4ac3b10/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="3aca7dabaa5b8f010f749873001e87dd1817744e">
+        <dex dex="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_e3334e1098744256ea53a3b2ec58cbc7d9aaf9ac/classes.dex" />
+    </item>
+
+</items>

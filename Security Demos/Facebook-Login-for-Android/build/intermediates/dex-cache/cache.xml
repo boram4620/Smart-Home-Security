@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-21.0.3_c7361eab3b06476552fa70063c69af2de750c75b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.2.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="bc599eb9531da9d18bc58ec4eb0b1a1d895f6839">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.2.0_ce9f1c2f8c6cc4d804579408300b95d1016309a2/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.13.1/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ad4d4c5914b7b25e51e66f8e2d1b842c67dd63a9">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.13.1_bb3d26ba96c321584f20c5f5381ecb44ec52427a/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/libs/internal_impl-23.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ea3c07504d2c8f4b13aa17c45c1b68ed9c1c3674">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.4.0_0ef93b98b32697106e163ad82dce5749ee204d44/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_ce6374bea257e753fb80349760c850f03026eb4b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="6adcc1f18ea0487594de233e547649c3b63dc6bf">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_bf326da1afdb155d782885a799dc440615336ab8/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.4.0/support-annotations-23.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="ffbe55fdb2bb456b1485831706a9eac3300bb6b8">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.4.0_8b553d92464f95cdea42155011c5414fba91ea9b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_a98900ca91b6f0216dd00cca767e7841b2473704/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="be0cc96c6206041d67e223d6067b0899cb235ba5">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3b82082c97d1889800c2c1ad965279d3707c0622/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="67bd36ee9340ec7c254108936ad16b24bed160cc">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.4.0_75c29c68885aa1af835bef7a94cac94c38964d73/classes.dex" />
+    </item>
+    <item
+        jar="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.4.0/jars/classes.jar"
+        jumboMode="true"
+        revision="21.1.2"
+        sha1="2d1eaa9e0b98f8fc4c2b989d9b30d4f1480648ac">
+        <dex dex="/Users/Justin/Documents/GitHub/IoTSecurity/Facebook-Login-for-Android/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-23.4.0_0209083e2bfece66b0bda052a851f38f2b2931b2/classes.dex" />
+    </item>
+
+</items>

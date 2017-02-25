@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDK/assets"/><source path="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDK/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDK/build-types/debug/assets"/></dataSet></merger>

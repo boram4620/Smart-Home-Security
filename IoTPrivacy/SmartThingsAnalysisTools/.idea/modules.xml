@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/OverprivilegeASTAnalyser/OverprivilegeASTAnalyser.iml" filepath="$PROJECT_DIR$/OverprivilegeASTAnalyser/OverprivilegeASTAnalyser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SmartThingsAnalysisTools.iml" filepath="$PROJECT_DIR$/SmartThingsAnalysisTools.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/share_item_template.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/share_item_template.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_auth_code.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_auth_code.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_scheme_page.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_scheme_page.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_login_logout.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_login_logout.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_share.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_share.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_open_api.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_open_api.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_open_api_base_layout.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_open_api_base_layout.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_social.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_social.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_pay.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_pay.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_game.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_game.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_open_api_logout.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_open_api_logout.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_auth.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_auth.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_main.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_share_main.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_share_main.xml"
+    },
+    {
+        "merged": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/build/intermediates/res/merged/debug/layout/activity_open_api_invite.xml",
+        "source": "/Users/Justin/Documents/GitHub/Security Demos/SinaWeibo_SDK_Perfect_Demo/WeiboSDKDemo/res/layout/activity_open_api_invite.xml"
+    }
+]
